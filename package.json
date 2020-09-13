@@ -4,7 +4,9 @@
   "description": "Api that powers the brightScreen Vs Code Extention",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node ./src/index.ts",
+    "server": "ts-node ./src/index.ts",
+    "web": "cd ./web && npm start",
+    "build-web": "cd ./web && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joshua Shoemaker",

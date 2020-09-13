@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App nav {
+  background-color: rgb(40, 40, 40);
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App nav a {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  height: 50px;
+  padding: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.App nav a:visited {
+  color: white;
+}
+
+.App nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.App nav a img {
+  width: 26px;
+  margin: 0px 4px;
+}
+
+.App .topNav {
+  margin: 0px auto;
+  text-align: center;
+}

@@ -1,0 +1,41 @@
+.Home header{
+  height: calc(100vh - 50px);
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(252, 252, 252);
+}
+
+.homeContentWrapper  {
+  filter: drop-shadow(0.25rem 0.45rem 1rem rgba(0, 0, 0, 0.3));
+}
+
+.homeButtonWrappers {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.homeButtonWrappers .button {
+  text-transform: uppercase !important;
+}
+
+.homeInfoColumn {
+  max-width: 500px;
+  margin: 40px auto !important;
+  font-size: 18px !important;
+  text-align: justify;
+}
+
+.homeInfoColumn .button {
+  margin-top: 20px !important;
+}
+
+.courseList {
+  max-width: 500px;
+  margin: 40px auto !important;
+}
+
+.courseListSubheader {
+  color: aqua;
+}
