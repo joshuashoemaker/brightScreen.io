@@ -21,7 +21,7 @@ class Server {
     this.app.use('/api', apiRouter)
   }
 
-  async connectToDatabase () {
+  connectToDatabase () {
     mongoose.connect(process.env.DBCONNECTION, {
       useCreateIndex: true,
       useNewUrlParser: true,
