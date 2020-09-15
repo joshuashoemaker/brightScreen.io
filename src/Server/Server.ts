@@ -1,5 +1,6 @@
 import * as express from 'express'
 import * as mongoose from 'mongoose'
+import * as path from 'path'
 import { json } from 'body-parser'
 import apiRouter from '../Routes/apiRoute'
 
@@ -14,11 +15,15 @@ class Server {
   createApp (): void {
     this.app = express()
     this.app.use(json())
+    this.app.use(express.static(path.join(process.cwd(), '/web/build')))
     this.connectToDatabase()
   }
 
   createRoutes (): void {
     this.app.use('/api', apiRouter)
+    this.app.use('/', (request, response, next) => {
+      response.sendFile(path.join(process.cwd(), './web/build/index.html'))
+    })
   }
 
   connectToDatabase () {
